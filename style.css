@@ -11,11 +11,10 @@ body {
 
 .wrapper {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100vw;
+  justify-content: space-evenly;
+  width: 100%;
   background-color: #181d31;
-  height: 100%;
+  height: 100vh;
 }
 #trigger {
   background: #181d31;
@@ -23,37 +22,24 @@ body {
   outline: none;
 }
 .tellers {
-  flex: 50%;
   border-right: 5px solid #fffbeb;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
 }
 
 .head-wrapper {
-  position: relative;
-  background: #20262e;
-  width: 100%;
-  z-index: 2;
-  margin-top: -150px;
-  margin-left: -70px;
-}
-.absolute {
-  position: absolute;
-  background: goldenrod;
-  top: 20px;
-  left: 30px;
-  padding: 30px;
-  width: 23%;
-  display: flex;
-  flex-direction: column;
-}
-.absolute > h1 {
   flex: 1;
+  padding: 30px;
+  background: goldenrod;
+}
+.col-wrap {
+  flex: 3;
+}
+
+.absolute > h1 {
   font-size: 24px;
   font-weight: bold;
   line-height: 1em;
@@ -61,26 +47,24 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .absolute > ul {
-  flex: 1;
   font-size: 400;
   padding: 12px;
 }
 .tell,
 .tell2 {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 3em;
   font-family: "Roboto", sans-serif;
   color: #ffff;
   text-transform: uppercase;
-  margin-top: -50px;
+  letter-spacing: 10px;
 }
 p {
   font-size: 12px;
 }
 .h1,
 .priorityNum {
-  margin-top: 100px;
-  margin-left: 30px;
+  text-align: end;
   font-family: "Roboto", sans-serif;
   color: #def5e5;
   font-size: 450px;
@@ -88,12 +72,21 @@ p {
   text-shadow: 16px -1px 24px rgba(0, 0, 0, 0.7);
 }
 .footer {
-  background: #fff;
+  background: #181d31;
   text-align: center;
   width: 100%;
   height: 50px;
   bottom: 0;
   position: relative;
+}
+.footer > p {
+  background-color: #181d31;
+  text-align: left;
+  color: #def5e5;
+}
+.footer > h1 {
+  color: #def5e5;
+  font-size: 42px;
 }
 
 /**special class***/
