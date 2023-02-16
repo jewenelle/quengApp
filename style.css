@@ -47,7 +47,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .absolute > ul {
-  font-size: 400;
+ 
   padding: 12px;
 }
 .tell,
@@ -67,7 +67,7 @@ p {
   text-align: end;
   font-family: "Roboto", sans-serif;
   color: #def5e5;
-  font-size: 450px;
+  font-size: 350px;
   font-weight: 700;
   text-shadow: 16px -1px 24px rgba(0, 0, 0, 0.7);
 }
