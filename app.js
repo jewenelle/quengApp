@@ -48,8 +48,8 @@ input.addEventListener("keydown", (e) => {
     if (e.keyCode === 97) {
       head.classList.add("zoomIn");
       heading.innerText = 1 + num++;
-      head.innerText = `Window 1`;
-      let textToSpeak = "number" + num + "to window 1";
+      head.innerText = `PAYMENT 1`;
+      let textToSpeak = "number" + num + "to PAYMENT 1";
       let speakData = new SpeechSynthesisUtterance();
       speakData.volume = 1; // From 0 to 1
       speakData.rate = 1; // From 0.1 to 10
@@ -62,8 +62,8 @@ input.addEventListener("keydown", (e) => {
     } else if (e.keyCode === 98) {
       tell2head.classList.add("zoomIn");
       pN.innerText = 1 + num++;
-      tell2head.innerText = `WINDOW 2`;
-      let textToSpeak = "number" + num + "to WINDOW 2";
+      tell2head.innerText = `PAYMENT 2`;
+      let textToSpeak = "number" + num + "to PAYMENT 2";
       let speakData = new SpeechSynthesisUtterance();
       speakData.volume = 1; // From 0 to 1
       speakData.rate = 1; // From 0.1 to 10
